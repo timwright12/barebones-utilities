@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+	<meta charset="utf-8">
+	<title>Demo</title>
+	</head>
+	<body>
+		<p>Demo.</p>
+		<button type="button" id="trap">Trap Focus</button>
+		<button type="button" id="untrap">Untrap Focus</button>
+
+		<div id="trapper">
+			<div>
+				<input type="text" aria-label="Some Input" placeholder="first input"/>
+			</div>
+			<div>
+				<input type="text" aria-label="Some Input" />
+			</div>
+			<div>
+				<input type="text" aria-label="Some Input" />
+			</div>
+			<div>
+				<input type="checkbox" aria-label="Some checkbox" /> checkers
+			</div>
+			<div>
+				<input type="radio" aria-label="Some radio" /> label<br />
+				<input type="radio" aria-label="Some radio" /> label
+			</div>
+			<div>
+				<button>Last Button</button>
+			</div>
+
+		</div>
+
+		<script src="../dist/index.min.js"></script>
+		<script>
+			// Get URL Params
+			var params = Barebones.getUrlParams( window.location.search );
+
+			// Focus Trapping
+			var btnTrap = document.getElementById('trap');
+			var btnUntrap = document.getElementById('untrap');
+			var trapper = document.getElementById('trapper');
+			var obj = new Barebones.Focus( trapper, {
+				setFocus: true
+			} );
+
+			// Trap
+			btnTrap.addEventListener('click', function() {
+				obj.trap();
+			}, false);
+
+			// Untrap
+			btnUntrap.addEventListener('click', function() {
+				obj.untrap();
+			}, false);
+
+		</script>
+	</body>
+</html>

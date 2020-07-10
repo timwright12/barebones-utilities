@@ -1,0 +1,3 @@
+tests
+webpack.config.babel.js
+*.spec.js

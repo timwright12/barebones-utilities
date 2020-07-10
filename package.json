@@ -1,0 +1,49 @@
+{
+  "name": "@barebones/utilities",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.min.js",
+  "scripts": {
+    "build": "webpack -p",
+    "test": "jest",
+    "watch": "webpack -d --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timwright12/barebones-utilities.git"
+  },
+  "keywords": [
+    "utility",
+    "javascript"
+  ],
+  "author": "Tim Wright",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timwright12/barebones-utilities/issues"
+  },
+  "homepage": "https://github.com/timwright12/barebones-utilities#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/register": "^7.7.4",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "browserslist": "^4.8.3",
+    "copy-webpack-plugin": "^5.1.1",
+    "core-js": "^3.0.0",
+    "eslint": "^6.8.0",
+    "eslint-loader": "^3.0.3",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "maintained node versions",
+    "IE 11"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.19"
+  }
+}
