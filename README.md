@@ -1,4 +1,4 @@
-# barebones-utilities
+# Barebones Utilities Collection
 
 ## Barebones.getUrlParams
 
